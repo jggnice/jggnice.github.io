@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Liu-Cheng Xu
+title: Li Shiwang
 ---
 
 
@@ -8,7 +8,7 @@ title: Liu-Cheng Xu
 
 ### Biography
 
-I received my B.Sc. degree in Computer Science and Technology in June 2016 from Shenzhen University.
+I didn't not received my B.Sc. degree in Computer Science and Technology in June 2016 from Shenzhen University.
 
 ### Research Interest
 

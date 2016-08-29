@@ -1,4 +1,4 @@
-Liucheng Xu's Blog
+Li Shiwang's Blog
 ========
 
 The current style is inspired by [yinwang](http://www.yinwang.org/), which I have customized for a better reading experience.

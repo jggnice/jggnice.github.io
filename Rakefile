@@ -34,7 +34,7 @@ task :post do
     open(filename, 'w') do |post|
         post.puts "---"
         post.puts "layout: post"
-        post.puts "author: Liucheng Xu"
+        post.puts "author: Li ShiWang"
         post.puts "title: \"#{title.gsub(/-/,' ')}\""
         post.puts "category: #{category}"
         post.puts "tags: #{tags}"
