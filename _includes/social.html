@@ -39,8 +39,38 @@
       <span class="label">QQ 空间</span>
     </a>
   </li>
+  {% endif %} 
+  
+  {% if site.social.lofter %}
+  <!-- qq -->
+  <li class="navigation__item">
+    <a href="http://{{site.social.lofter}}.lofter.com/" title="@{{site.title}} 的 Lofter" target="_blank">
+      <i class='social fa fa-gbp'></i>
+      <span class="label">Lofter</span>
+    </a>
+  </li>
   {% endif %}
   
+  {% if site.social.topit %}
+  <!-- qq -->
+  <li class="navigation__item">
+    <a href="http://www.topit.me/user/{{site.social.topit}}" title="@{{site.title}} 的 Topit" target="_blank">
+      <i color="red" class='social fa fa-heart'></i>
+      <span class="label">Topit</span>
+    </a>
+  </li>
+  {% endif %} 
+
+  {% if site.social.mail %}
+  <!-- Email -->
+  <li class="navigation__item">
+    <a href="mailto:{{site.social.mail}}" title="@{{site.title}}的邮箱">
+      <i class='social fa fa-envelope'></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+  {% endif %}
+   
   {% if site.social.twitter %}
   <!-- Twitter -->
   <li class="navigation__item">
@@ -60,24 +90,13 @@
     </a>
   </li>
   {% endif %}
-
-  <!-- RSS -->
+  
+    <!-- RSS -->
   <li class="navigation__item">
     <a href="/feed.xml" rel="author" title="RSS" target="_blank">
       <i class='social fa fa-rss'></i>
       <span class="label">RSS</span>
     </a>
   </li>
-
-  {% if site.social.mail %}
-  <!-- Email -->
-  <li class="navigation__item">
-    <a href="mailto:{{site.social.mail}}" title="@{{site.title}}的邮箱">
-      <i class='social fa fa-envelope'></i>
-      <span class="label">Email</span>
-    </a>
-  </li>
-  {% endif %}
-
   </ul>
 </nav>
