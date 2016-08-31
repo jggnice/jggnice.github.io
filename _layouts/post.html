@@ -1,50 +1,24 @@
-<html>
-  <head>
-	<link rel="shortcut icon" type="image/x-icon" href="/images/1362884249.jpg" media="screen" />
-    <meta content='{{ page.title }} - {{ site.title }}' property='og:title' />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="blog" property="og:type" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link href='/sources/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
-    <link href='/sources/css/bootstrap-theme.min.css' rel='stylesheet' type='text/css' />
-    <link href="/sources/css/post.css" rel="stylesheet" type="text/css" />
-    {% if page.math == 'y' %}
-    {% include mathjax-config.html %}
-    {% endif %}
-    <!-- code highlight -->
-    <link rel="stylesheet" href="/sources/js/google-code-prettify/prettify.css">
-    <script src="/sources/js/jquery.min.js"></script>
-    <script src="/sources/js/google-code-prettify/prettify.js"></script>
-    <script type="text/javascript">
-    $(function(){
-        $("pre").addClass("prettyprint ");
-        prettyPrint();
-    });
-    </script>
-  </head>
-  <body>
-    {% include nav.html %}
-    <div class="row" style="padding-top: 70px">
-      <div class="container center-block">
-        <div class="col-md-2"></div>
-        <div class="main col-md-8 col-sm-12">
-            <h1>{{ page.title }}</h1>
-            {{ content }}
-            <div class="col-md-12 bg-info">
-            {% include copyright.html %}
-            </div>
-            {% if page.donate == 'y' %}
-            {% include donate.html %}
-            {% endif %}
-            {% if page.disqus == 'y' %}
-            {% include disqus.html %}
-            {% endif %}
-        </div>
-      </div>
+---
+layout: default
+---
+
+<article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{page.date | date: date_to_xmlschema}}" itemprop="datePublished" class="post-meta__date date">{{page.date | date: "%F"}}</time>
+     
+      <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_page_pv">　　阅读：<span id="busuanzi_value_page_pv"></span>次</span>
+    </p>
     </div>
-    <script src="/sources/js/jquery.min.js"></script>
-    <script src="/sources/js/bootstrap.min.js"></script>
-    {% include google-analytics.html %}
-  </body>
-</html>
+  </header>
+
+  <section class="post">
+    {{ content }}
+
+  </section>
+</article>
+
+{% include new-old.html %}
+{% include comments.html %}

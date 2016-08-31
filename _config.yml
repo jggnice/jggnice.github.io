@@ -1,20 +1,48 @@
-title:            Li Shiwang
-description:      It is our light, not our darkness that frightens us.
-url:              # Site url.
-disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
-#disqus_shortname: xuliuchengxlc  # disqus comment thread for post header options. ( leave blank if unwanted. )
-google_analytics: UA-73260325-1  # set tracking, remove from /javascripts/basic.js if unwanted.
+# Basic
+title: 潘柏信
+subtitle: 个人站
+description: 
+creator: <a href="http://baixin.io">@leopardpan</a>
 
-kramdown:
-  input:    GFM
-  syntax_highlighter:    rouge
+url: "http://baixin.io"
 
-defaults:
-    -
-        scope:
-            path:    "_posts"
-            type:    "posts"
-        values:
-          layout:    "post"
-          disqus:    "y"
-          author:    "Li Shiwang"
+permalink: /:year/:month/:title/
+
+# Format
+highlighter: rouge
+# markdown: redcarpet
+# redcarpet:
+  # extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
+
+# The blog button should not be removed.
+blog_button:
+    title: 博客
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: Wiki, description: Wiki, url: 'http://wiki.baixin.io'}
+    
+# Pagination
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+# Comment
+comment:
+    # disqus: leopard
+    duoshuo: leopard 
+
+# Social
+social:
+    weibo: 5366874726 
+    github: leopardpan
+    # twitter: 
+    mail: leopardpan@icloud.com
+
+# Google Analytics
+ga:
+    # id: your_ga_id
+    # host: your_host
