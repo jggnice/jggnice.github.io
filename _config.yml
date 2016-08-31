@@ -1,10 +1,10 @@
 # Basic
-title: 潘柏信
+title: Li Shiwang
 subtitle: 个人站
 description: 
-creator: <a href="http://baixin.io">@leopardpan</a>
+creator: <a href="http://jggnice.top">@jggnice</a>
 
-url: "http://baixin.io"
+url: "http://jggnice.top"
 
 permalink: /:year/:month/:title/
 
@@ -23,7 +23,7 @@ blog_button:
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: Wiki, description: Wiki, url: 'http://wiki.baixin.io'}
+    - {title: Wiki, description: Wiki, url: 'http://jggnice.top'}
     
 # Pagination
 gems: [jekyll-paginate]
@@ -37,10 +37,10 @@ comment:
 
 # Social
 social:
-    weibo: 5366874726 
-    github: leopardpan
+    weibo: 3847637730 
+    github: jggnice
     # twitter: 
-    mail: leopardpan@icloud.com
+    mail: whysocute@qq.com
 
 # Google Analytics
 ga:
