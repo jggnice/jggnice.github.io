@@ -1,7 +1,6 @@
 # Basic
 title: Li Shiwang
 subtitle: 个人站
-userid: jggnice
 description: Just go for it! 
 creator: <a href="http://jggnice.top">@jggnice</a>
 
@@ -33,8 +32,8 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    # disqus: jggnice
-    duoshuo: jggnice
+    # disqus: leopard
+    duoshuo: leopard 
 
 # Social
 social:
