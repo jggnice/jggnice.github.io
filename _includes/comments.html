@@ -22,7 +22,12 @@
     
   {% elsif site.comment.duoshuo %}
   <!-- 多说分享框 start -->
-  <div class="ds-share" data-thread-key="此处请替换为当前文章的thread-key" data-title="此处请替换为分享时显示的标题" data-images="此处请替换为分享时显示的图片的链接地址" data-content="此处请替换为分享时显示的内容" data-url="此处请替换为分享时显示的链接地址">
+  <div class="ds-share" 
+  data-thread-key="{{ page.url }}" 
+  data-title="{{ page.title }}"
+  data-images="{{ site.imageurl }}" 
+  data-content="这是什么"
+  data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-32">
       	
@@ -39,7 +44,11 @@
  </div>
  <!-- 多说分享框  end  -->
   <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
+    <div class="ds-thread" 
+	data-thread-key="{{ page.url }}" 
+	data-title="{{ page.title }}" 
+	data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+	</div>
   <!-- 多说评论框  end  -->
   <!-- 多说公共JS代码 start -->
     <script type="text/javascript">

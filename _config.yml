@@ -6,6 +6,7 @@ description: Just go for it!
 creator: <a href="http://jggnice.top">@jggnice</a>
 
 url: "http://jggnice.top"
+imageurl: "http://jggnice.top/assets/images/background-cover.jpg"
 
 permalink: /:year/:month/:title/
 
