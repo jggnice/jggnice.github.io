@@ -4,7 +4,6 @@
   {% include head.html %}
 
   <body>
-
     <span class="mobile btn-mobile-menu">
         <i class="fa fa-list btn-mobile-menu__icon"></i>
         <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
@@ -14,6 +13,9 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
+			<script type="text/javascript" async
+				src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+			</script>
             {{ content }}
             {% include footer.html %}
         </div>
