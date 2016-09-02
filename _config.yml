@@ -30,6 +30,7 @@ gems: [jekyll-paginate]
 paginate: 10
 paginate_path: "page/:num/"
 
+
 # Comment
 comment:
     # disqus: 你注册的disqus账号
