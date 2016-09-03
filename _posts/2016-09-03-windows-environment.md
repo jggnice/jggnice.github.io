@@ -1,8 +1,6 @@
 ---
 layout: post
 title: 打造一个简洁高效的Windows环境
-tlayout: post
-title: 从零开始LaTeX快速入门
 date: 2016-09-03 07:00:25
 tags: Windows
 ---
