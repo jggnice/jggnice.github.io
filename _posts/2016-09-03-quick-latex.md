@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 从零开始LaTeX快速入门
-date: 2016-09-03 07:00:25
+date: 2016-09-03 07:40:25
 tags: LaTeX
 ---
 
