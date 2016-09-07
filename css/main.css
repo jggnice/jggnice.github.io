@@ -1224,4 +1224,9 @@ body {
     backface-visibility: hidden;
 }
 /*头像效果-end*/
-
+#neteasemusic 
+{
+background-color: green; 
+padding: 50px;
+margin: 100px;
+}
