@@ -2,7 +2,7 @@
 layout: post
 title: 学会使用vim
 date: 2016-09-03 07:00:25
-tags: vim
+tags: 《vim》
 ---
 
 * TOC

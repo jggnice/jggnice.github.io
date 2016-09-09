@@ -2,7 +2,7 @@
 layout: post
 title: git备忘录
 date: 2016-09-03 06:20:25
-tags: git
+tags: 《git》
 ---
 * TOC
 {:toc}
