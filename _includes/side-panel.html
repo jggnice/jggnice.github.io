@@ -1,11 +1,16 @@
-<header class="panel-cover {% if page.layout == 'post' or page.layout == 'page' %}panel-cover--collapsed{% endif %}" style="background-image: url('/assets/images/background-cover.jpg')">
+<header 
+class="
+panel-cover 
+{% if page.layout == 'post' or page.layout == 'page' %}
+panel-cover--collapsed
+{% endif %}"
+style="background-image: url('/assets/images/background-cover.jpg')">
   <div class="panel-main">
-
     <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
+		<div class="panel-main__content">
         <!-- 头像效果-start -->
-        <div class="ih-item circle effect right_to_left">            
-            <a href="/#blog" title="前往 {{ site.title }} 的主页" class="blog-button">
+			<div class="ih-item circle effect right_to_left">            
+				<a href="/#blog" title="前往 {{ site.title }} 的主页" class="blog-button">
                 <div class="img"><img src="/assets/images/avatar.jpg" alt="img"></div>
                 <div class="info">
                     <div class="info-back">
@@ -16,10 +21,14 @@
 						
                     </div>
                 </div>
-            </a>
-        </div>
+				</a>
+			</div>
         <!-- 头像效果-end -->
-        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for {{ site.title }}" class="blog-button">{{ site.title }}</a></h1>
+        <h1 class="panel-cover__title panel-title">
+			<a href="/#blog" title="link to homepage for {{ site.title }}" class="blog-button">
+			{{ site.title }}
+			</a>
+		</h1>
         {% if site.subtitle %}
         <span class="panel-cover__subtitle panel-subtitle">{{site.subtitle}}</span>
         {% endif %}
