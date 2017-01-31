@@ -888,7 +888,7 @@ input[type="tel"] {
   .navigation--social {
     margin-top: 5px;
     margin-left: 0; } }
-@media all and (max-width: 960px) {
+@media all and (max-width: 999960px) {
   .btn-mobile-menu {
     display: block; }
 
