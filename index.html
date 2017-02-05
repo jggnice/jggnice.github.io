@@ -1,30 +1,219 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="main-post-list hidden">
+<head>
+<meta charset="utf-8">
+<meta
+	http-equiv="X-UA-Compatible"
+	content="IE=edge">
+<meta
+	name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>{% if page.title %}{{ page.title | escape }}{% else %}{{
+	site.title | escape }}{% endif %}</title>
+<link
+	rel="stylesheet"
+	href="/css/main.css">
+<link
+	href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+	rel="stylesheet">
+<script src="/js/angular.js"></script>
+<script src="/js/angular-route.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	   tex2jax: {
+		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+		displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+		processEscapes: true,
+		skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+	  }
+	 });
+	 MathJax.Hub.Queue(function() {
+	   var all = MathJax.Hub.getAllJax(), i;
+	   for(i=0; i < all.length; i += 1) {
+		all[i].SourceElement().parentNode.className += ' has-jax';
+		}
+		});
+</script>
+</head>
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title">
-	  <a href="{{ post.url }}" title="访问 {{ post.title }}">
-	  {{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 150 }}&hellip;</p>
-      <div class="post-list__meta">
-		<time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">
-		{{ post.date | date: "%F"}}</time> 
-		&#8226; Tag<a href="/tags">
-		
-		<span class="post-list__meta--tags tags">{{ post.tags }}</span>
-		
-		<a class="btn-border-small" href={{ post.url }}>阅读全文...</a>
-	  </div>
-      <hr class="post-list__divider" />
-    </li>
-    {% endfor %}
-  </ol>
 
-  {% include pagination.html %}
+<body ng-app="myApp">
+	<span class="mobile btn-mobile-menu"> <i
+		class="fa fa-list btn-mobile-menu__icon"></i> <i
+		class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+	</span>
 
-</div>
+	<!--  {% include side-panel.html %} -->
+	<header
+		class="
+panel-cover 
+panel-cover--collapsed"
+		style="background-image: url('/assets/images/background-cover.jpg')">
+		<div class="panel-main">
+			<div class="panel-main__inner panel-inverted">
+				<div class="panel-main__content">
+					<!-- 头像-start -->
+					<div class="ih-item circle effect right_to_left">
+						<a
+							href="/#blog"
+							title="goto blog"
+							class="blog-button">
+							<div class="img">
+								<img
+									src="/assets/images/avatar.jpg"
+									alt="img">
+							</div>
+							<div
+								class="info"
+								style="display: none;">
+								<div class="info-back">
+									<h2>{{ site.title }}</h2>
+									<p align=center>
+										<font color="red">site.description</font>
+									</p>
+
+								</div>
+							</div>
+						</a>
+					</div>
+					<!-- 头像-end -->
+					<h1 class="panel-cover__title panel-title">
+						<a
+							href="/#blog"
+							title="link to homepage for {{ site.title }}"
+							class="blog-button"> {{ site.title }} </a>
+					</h1>
+					<!-- {% if site.subtitle %} -->
+					<span class="panel-cover__subtitle panel-subtitle">{{site.subtitle}}</span>
+					<!-- {% endif %} -->
+					<hr class="panel-cover__divider" />
+					<p class="panel-cover__description">
+						<font color="red"> {{ site.description }} </font>
+					</p>
+					<hr class="panel-cover__divider" />
+
+					<!-- {% if site.welcome_message %} -->
+					<p class="panel-cover__description">{{ site.welcome_message }}</p>
+					<!-- {% endif %} -->
+
+					<div class="navigation-wrapper">
+						<div>
+							<nav class="cover-navigation cover-navigation--primary">
+								<ul class="navigation">
+									<li><br /> <br /></li>
+									<li class="navigation__item"><a
+										href="#/"
+										title="{{description1}}"
+										class="blog-button">首页</a></li>
+									<!-- {% for item in site.nav %} -->
+									<li class="navigation__item"><a
+										href="#/computers"
+										title="{{description2}}">电脑</a></li>
+									<li class="navigation__item"><a
+										href="#/printers"
+										title="{{description3}}">打印机</a></li>
+									<!-- {% endfor %} -->
+									<iframe
+										id="neteasemusic"
+										frameborder="no"
+										border="0"
+										marginwidth="0"
+										marginheight="0"
+										width=298
+										height=52
+										src="http://music.163.com/outchain/player?type=0&id=155714582&auto=0&height=32">
+									</iframe>
+								</ul>
+							</nav>
+						</div>
+
+						<div>
+							<nav class="cover-navigation navigation--social">
+								<ul class="navigation">
+
+									<!-- {% if site.social.weibo %} -->
+									<!-- Weibo -->
+									<li class="navigation__item"><a
+										href="http://weibo.com/3847637730"
+										title="@{{site.title}} ��΢��"
+										target="_blank"> <font color="red"> <i
+												class='social fa fa-weibo'></i>
+										</font> <span class="label">Weibo</span>
+									</a></li>
+									<li class="navigation__item"><a
+										href="http://weibo.com/3847637730"
+										title="@{{site.title}} ��΢��"
+										target="_blank"> <font color="red"> <i
+												class='social fa fa-weibo'></i>
+										</font> <span class="label">Weibo</span>
+									</a></li>
+									<li class="navigation__item"><a
+										href="http://weibo.com/3847637730"
+										title="@{{site.title}} ��΢��"
+										target="_blank"> <font color="red"> <i
+												class='social fa fa-weibo'></i>
+										</font> <span class="label">Weibo</span>
+									</a></li>
+									<!-- {% endif %} -->
+
+									<!-- {% if site.social.github %} -->
+									<!-- Github -->
+									<li class="navigation__item"><a
+										href="https://github.com/jggnice"
+										title="@{{site.title}} �� Github"
+										target="_blank"> <i class='social fa fa-github fa-inverse'></i>
+											<span class="label">Github</span>
+									</a></li>
+									<!-- {% endif %} -->
+								</ul>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- {% if site.cover_color %}
+		<div class="panel-cover--overlay cover-{{site.cover_color}}"></div>
+		{% else %}
+		<div class="panel-cover--overlay cover-disabled"></div>
+		{% endif %} -->
+			<div class="panel-cover--overlay cover-bright"></div>
+		</div>
+	</header>
+
+	<!--end  {% include side-panel.html %} -->
+
+	<div class="content-wrapper">
+		<div
+			class="content-wrapper__inner"
+			ng-view>
+			<!-- {% include footer.html %} -->
+		</div>
+	</div>
+	<script>
+		var app = angular.module('myApp', []);
+			app.controller('myCtrl', function($scope) {
+		    $scope.firstName= "John";
+		    $scope.lastName= "Doe";
+		});
+			angular.module('myApp',['ngRoute'])
+            .config(['$routeProvider', function($routeProvider){
+                $routeProvider
+                .when('/',{template:'这是首页页面'})
+                .when('/computers',{template:'这是电脑分类页面'})
+                .when('/printers',{template:'这是打印机页面'})
+                .otherwise({templateUrl: 'CNAME'});
+            }]);
+	</script>
+	<!-- {% include external.html %} -->
+
+</body>
+<script
+	type="text/javascript"
+	src="/js/jquery.js"></script>
+<script
+	type="text/javascript"
+	src="/js/main.js"></script>
+</html>

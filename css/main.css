@@ -568,6 +568,11 @@ hr {
   background-image: -webkit-linear-gradient(-410deg, rgba(37, 104, 163, 0.6) 20%, rgba(18, 51, 80, 0.8));
   background-image: linear-gradient(140deg,rgba(37, 104, 163, 0.6) 20%, rgba(18, 51, 80, 0.8)); }
 
+.cover-bright {
+  background-color: rgba(255, 0, 0, 0);
+  background-image: -webkit-linear-gradient(-410deg, rgba(37, 104, 163, 0) 100%, rgba(18, 51, 80, 0));
+  background-image: linear-gradient(140deg,rgba(0, 0, 0, 0) 20%, rgba(18, 51, 80, 0)); }
+
 .cover-green {
   background-color: rgba(21, 111, 120, 0.6);
   background-image: -webkit-linear-gradient(-410deg, rgba(21, 111, 120, 0.6) 20%, rgba(6, 31, 33, 0.8));
@@ -919,7 +924,7 @@ input[type="tel"] {
     .panel-cover.panel-cover--collapsed {
       display: block;
       position: relative;
-      height: auto;
+      height: 600px;
       padding: 0;
       background-position: center center; }
       .panel-cover.panel-cover--collapsed .panel-main__inner {
