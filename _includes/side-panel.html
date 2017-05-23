@@ -49,14 +49,6 @@ style="background-image: url('/assets/images/background-cover.jpg')">
         <div class="navigation-wrapper">
           <div>
             <nav class="cover-navigation cover-navigation--primary">
-              <ul class="navigation">
-                
-                  <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
-                {% for item in site.nav %}
-                  <li class="navigation__item"><a href="{{item.url}}" class="blog-button" target="_blank" title="{{item.description}}">{{item.title}}</a></li>
-                {% endfor %}
-                
-              </ul>
               <iframe id="neteasemusic" 
                         frameborder="no" 
                         border="0" 
@@ -66,6 +58,15 @@ style="background-image: url('/assets/images/background-cover.jpg')">
                         height=52 
                         src="http://music.163.com/outchain/player?type=0&id=155714582&auto=0&height=32">
                 </iframe>
+              <ul class="navigation">
+                
+                  <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
+                {% for item in site.nav %}
+                  <li class="navigation__item"><a href="{{item.url}}" class="blog-button" target="_blank" title="{{item.description}}">{{item.title}}</a></li>
+                {% endfor %}
+                
+              </ul>
+              
             </nav>
           </div>
           
