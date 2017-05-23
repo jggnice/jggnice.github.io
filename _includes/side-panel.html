@@ -7,60 +7,63 @@ panel-cover--collapsed
 style="background-image: url('/assets/images/background-cover.jpg')">
   <div class="panel-main">
     <div class="panel-main__inner panel-inverted">
-		<div class="panel-main__content">
+        <div class="panel-main__content">
         <!-- 头像效果-start -->
-			<div class="ih-item circle effect right_to_left">            
-				<a href="/#blog" title="前往 {{ site.title }} 的主页" class="blog-button">
+            <div class="ih-item circle effect right_to_left">
+                <a href="/#blog" title="前往 {{ site.title }} 的主页" class="blog-button">
                 <div class="img"><img src="/assets/images/avatar.jpg" alt="img"></div>
                 <div class="info">
                     <div class="info-back">
                         <h2>{{ site.title }}</h2>
                         <p align = center >
-						<font color = "red">{{ site.description }}</font>
-						</p>
-						
+                        <font color = "red">{{ site.description }}</font>
+                        </p>
+                        
                     </div>
                 </div>
-				</a>
-			</div>
+                </a>
+            </div>
         <!-- 头像效果-end -->
+        <!-- site description start -->
         <h1 class="panel-cover__title panel-title">
-			<a href="/#blog" title="link to homepage for {{ site.title }}" class="blog-button">
-			{{ site.title }}
-			</a>
-		</h1>
+            <a href="/#blog" title="link to homepage for {{ site.title }}" class="blog-button">
+            {{ site.title }}
+            </a>
+        </h1>
         {% if site.subtitle %}
         <span class="panel-cover__subtitle panel-subtitle">{{site.subtitle}}</span>
         {% endif %}
         <hr class="panel-cover__divider" />
         <p class="panel-cover__description">
-		<font color = "red">
-		{{ site.description }}
-		</font>
-		</p>
+        <font color = "red">
+        {{ site.description }}
+        </font>
+        </p>
         <hr class="panel-cover__divider" />
         
         {% if site.welcome_message %}
         <p class="panel-cover__description">{{ site.welcome_message }}</p>
         {% endif %}
-        
+        <!-- site description end -->
+        <!-- navigation panel start -->
         <div class="navigation-wrapper">
           <div>
             <nav class="cover-navigation cover-navigation--primary">
               <ul class="navigation">
+                <iframe id="neteasemusic" 
+                        frameborder="no" 
+                        border="0" 
+                        marginwidth="0" 
+                        marginheight="0" 
+                        width=298 
+                        height=52 
+                        src="http://music.163.com/outchain/player?type=0&id=155714582&auto=0&height=32">
+                </iframe>
                   <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
                 {% for item in site.nav %}
-                  <li class="navigation__item"><a href="{{item.url}}" target="_blank" title="{{item.description}}">{{item.title}}</a></li>
+                  <li class="navigation__item"><a href="{{item.url}}" class="blog-button" target="_blank" title="{{item.description}}">{{item.title}}</a></li>
                 {% endfor %}
-				<iframe id="neteasemusic" 
-						frameborder="no" 
-						border="0" 
-						marginwidth="0" 
-						marginheight="0" 
-						width=298 
-						height=52 
-						src="http://music.163.com/outchain/player?type=0&id=155714582&auto=0&height=32">
-				</iframe>
+                
               </ul>
             </nav>
           </div>
