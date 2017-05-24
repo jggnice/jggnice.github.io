@@ -37,7 +37,7 @@ paginate_path: "page/:num/"
 comment:
     # disqus: 你注册的disqus账号
     # duoshuo: 你注册的duoshuo账号
-    duoshuo: jggnice
+    # duoshuo: jggnice
     uyan: 2134374
 
 # Social
