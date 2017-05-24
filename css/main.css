@@ -238,8 +238,8 @@ td:last-child {
 /*pager start----------------*/
 .post-container 
 .pager li{ width:48%}
-.next{float:right}
-.previous{float:left}
+.next{float:left;display:inline-block;}
+.previous{float:left;display:inline-block;}
 .pager li>a{width:100%}
 
 .pager li>a>span{
