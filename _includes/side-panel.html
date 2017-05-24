@@ -10,7 +10,7 @@ style="background-image: url('/assets/images/background-cover.jpg')">
         <div class="panel-main__content">
         <!-- 头像效果-start -->
             <div class="ih-item circle effect right_to_left">
-                <a href="/#blog" title="前往 {{ site.title }} 的主页" class="blog-button">
+                <a href="/#blog" title="前往 {{ site.title }} 的主页" class="blog-button target-remain-self">
                 <div class="img"><img src="/assets/images/avatar.jpg" alt="img"></div>
                 <div class="info">
                     <div class="info-back">
@@ -26,7 +26,7 @@ style="background-image: url('/assets/images/background-cover.jpg')">
         <!-- 头像效果-end -->
         <!-- site description start -->
         <h1 class="panel-cover__title panel-title">
-            <a href="/#blog" title="link to homepage for {{ site.title }}" class="blog-button">
+            <a href="/#blog" title="link to homepage for {{ site.title }}" class="blog-button target-remain-self">
             {{ site.title }}
             </a>
         </h1>
@@ -60,7 +60,7 @@ style="background-image: url('/assets/images/background-cover.jpg')">
                 </iframe>
               <ul class="navigation">
                 
-                  <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
+                  <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button target-remain-self">{{site.blog_button.title}}</a></li>
                 {% for item in site.nav %}
                   <li class="navigation__item"><a href="{{item.url}}" class="blog-button" target="_blank" title="{{item.description}}">{{item.title}}</a></li>
                 {% endfor %}
