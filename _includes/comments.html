@@ -62,8 +62,12 @@
         })();
     </script>
   <!-- 多说公共JS代码  end -->
+  {% elsif site.comment.uyan %}
+  <!-- 友言 start-->
+  <!-- UY BEGIN -->
+  <div id="uyan_frame"></div>
+  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid={{ site.comment.uyan }}"></script>
+  <!-- UY END -->
+  <!-- 友言 end-->
   {% endif %}
-  
-  
-  
 </section>
