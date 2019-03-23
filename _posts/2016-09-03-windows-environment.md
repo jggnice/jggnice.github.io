@@ -114,9 +114,9 @@ Mac 还有一个相当方便的功能：通过单击空格键来对几乎所有�
 
 LaTeX编辑器：TeXstudio，跨平台。
 
-windows shell : [babun， a windows shell you will love](http://babun.github.io/)。模拟Unix shell，在Windows体验Unix terminal。
+windows shell : [babun， a windows shell you will love](https://babun.github.io/)。模拟Unix shell，在Windows体验Unix terminal。
 
-Mobaxterm : [Enhanced terminal for Windows with X11 server， tabbed SSH client， network tools and much more](http://mobaxterm.mobatek.net/)， 不要再用putty了。
+Mobaxterm : [Enhanced terminal for Windows with X11 server， tabbed SSH client， network tools and much more](https://mobaxterm.mobatek.net/)， 不要再用putty了。
 
 翻墙：lantern，开源免费，在[GitHub](https://github.com/getlantern/lantern)下载即可；shadowsocks， www.ss-link.com 现在7块一个月，我买的时候还是5块。
 
@@ -140,7 +140,7 @@ Octotree       |Code tree for GitHub and GitLab
 
 **美化任务栏**
 
-[这里是分享的免注册版本，直接安装即可。在分享的链接中可能还有其他软件，不过还是大家尽可能的自行下载最新可用版本获得更好的体验](http://pan.baidu.com/share/home?uk=1731296444&view=share#category/type=0)
+[这里是分享的免注册版本，直接安装即可。在分享的链接中可能还有其他软件，不过还是大家尽可能的自行下载最新可用版本获得更好的体验](https://pan.baidu.com/share/home?uk=1731296444&view=share#category/type=0)
 
 win10的任务栏实在是不好看，黑色的一条杠横在那儿。用了startisback以后可以将任务栏设置为透明状态，并且还可以设置开始菜单。
 可能安装以后有人会找不到程序在哪里，用上面的everything搜索startisback就会发现StartIsBackCfg.exe，运行它就会进入到设置页面。

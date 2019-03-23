@@ -35,7 +35,7 @@ LaTeX始终是个工具，快速使用活学活用才是硬道理。笔者从第
 
 LaTeX中还有宏包的概念，`\usepackage{foo}`即可使用宏包foo中定义的内容。这跟C语言的`include`是一样的，将文件加载进来进行使用。所谓宏包就是一些写好的内容打包出来以便大家使用而已。利用宏包，我们可以使用很多现成的好用的样式。当然了，如果要编写一个自己的个性化的宏包也是可以的，不过需要学习成本而已。  
 
-初期的话，我们可以选择一个LaTeX模板进行改造。不过第一次见到一些模板的话，可能会对很多文件的作用一头雾水，下面是简单的介绍，详细内容可见[在LaTeX中进行文学编程](http://liam0205.me/2015/01/23/literate-programming-in-latex/)，当然更多介绍的话可以自行搜索。
+初期的话，我们可以选择一个LaTeX模板进行改造。不过第一次见到一些模板的话，可能会对很多文件的作用一头雾水，下面是简单的介绍，详细内容可见[在LaTeX中进行文学编程](https://liam0205.me/2015/01/23/literate-programming-in-latex/)，当然更多介绍的话可以自行搜索。
 
 
 LaTeX模板常见文件类型 | 功能简要介绍
@@ -51,7 +51,7 @@ LaTeX模板常见文件类型 | 功能简要介绍
 class与style好像内容很像的感觉，在功能上的确很相似，但是也有区别。[这里是关于.cls与.sty文件的区别](https://tug.org/pracjourn/2005-3/asknelly/nelly-sty-&-cls.pdf)
 
 
-[额外推荐阅读材料:来自北京大学李东风老师的LaTeX排版心得](http://www.math.pku.edu.cn/teachers/lidf/docs/textrick/tricks.pdf)
+[额外推荐阅读材料:来自北京大学李东风老师的LaTeX排版心得](https://www.math.pku.edu.cn/teachers/lidf/docs/textrick/tricks.pdf)
 
 ## 安装配置LaTeX
 
@@ -64,12 +64,12 @@ LaTeX配置环境很简单，只需2步即可：
         [TeXLive](https://www.tug.org/texlive/)
     - Windows
 
-        [CTeX套装](http://www.ctex.org/CTeXDownload)
+        [CTeX套装](https://www.ctex.org/CTeXDownload)
     - Mac
 
-        [MacTeX](http://tug.org/mactex/)
+        [MacTeX](https://tug.org/mactex/)
 
-    windows用户推荐TeXlive，不推荐CTeX。我一开始安装的是CTeX，在TeXstudio里面总有一些莫名其妙的错误，比如明明定义了一个命令，在log里面还是会显示error：undefined control sequence，换了TeXlive就没有那些莫名其妙的错误了。TeXlive在线安装太慢了，安装包太大，2.66G，这里是我分享的[2015 TeXlive 离线安装包 百度云盘链接](http://pan.baidu.com/s/1jHfUzWy)， 提取密码2cj2，解压缩后运行install-tl-windows.bat即可。mac用户推荐使用MacTeX.
+    windows用户推荐TeXlive，不推荐CTeX。我一开始安装的是CTeX，在TeXstudio里面总有一些莫名其妙的错误，比如明明定义了一个命令，在log里面还是会显示error：undefined control sequence，换了TeXlive就没有那些莫名其妙的错误了。TeXlive在线安装太慢了，安装包太大，2.66G，这里是我分享的[2015 TeXlive 离线安装包 百度云盘链接](https://pan.baidu.com/s/1jHfUzWy)， 提取密码2cj2，解压缩后运行install-tl-windows.bat即可。mac用户推荐使用MacTeX.
 
 2. 选择一个合适的LaTeX编辑器。
 
@@ -77,7 +77,7 @@ LaTeX配置环境很简单，只需2步即可：
 
     在这里推荐一个我目前觉得还不错的LaTeX编辑器：**TeXstudio**。我试过WinEdt，TeXnicle，不过都比不上TeXstudio。在WinEdt下面无法编译的文件，居然可以在TeXstudio中编译生成最终效果，虽然log里面显示error，但的确产生了效果。不管怎么说，用TeXstudio就对了。它使用qt写的，还跨平台。
 
-    TeXmacs有兴趣的也可以了解一下，[王垠也在博客中推荐过](http://www.yinwang.org/blog-cn/2012/09/18/texmacs)。
+    TeXmacs有兴趣的也可以了解一下，[王垠也在博客中推荐过](https://www.yinwang.org/blog-cn/2012/09/18/texmacs)。
 
 ## 开始第一个LaTeX文档
 
@@ -132,7 +132,7 @@ LaTeX 的数学模式有两种：行内模式(inline)和行间模式(display)。
 |<code>\$ \int_a^b f(x)\$</code>|$\int_a^bf(x)$|
 |<code>\$ \frac ab \$</code>|$\frac ab$|
 
-有了这几个概念以后，再动手写几个就大概懂了。无论多么复杂的公式都是有一个个简单的东西构成。推荐一个网站：[MathJax basic tutorial ](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+有了这几个概念以后，再动手写几个就大概懂了。无论多么复杂的公式都是有一个个简单的东西构成。推荐一个网站：[MathJax basic tutorial ](https://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 
 ## LaTeX中文支持
 
@@ -176,12 +176,12 @@ content
 
 ## 几个LaTeX推荐网站
 
-- [Detexify LaTeX handwritten symbol recognition](http://detexify.kirelabs.org/classify.html).
+- [Detexify LaTeX handwritten symbol recognition](https://detexify.kirelabs.org/classify.html).
 
 通过手写识别LaTeX符号，识别率很高。
 尤其是当看到一个符号却不知道其LaTeX命令的时候它很有用。只要画出记忆中符号的样子，就会自动出现各种可能想要的表示方法。
 
-- [LaTeX公式编辑器](http://zh.numberempire.com/texequationeditor/equationeditor.php)
+- [LaTeX公式编辑器](https://zh.numberempire.com/texequationeditor/equationeditor.php)
 
 对于尚不熟悉的人书写LaTeX公式提供一点便利。
 
@@ -215,8 +215,8 @@ content
 
 [论文简介](xuliuchengxlc.github.io/szuthesis/)
 
-[LaTeX写的beamer幻灯片](http://www.liuchengxu.org/szuthesis/presentation.pdf)
+[LaTeX写的beamer幻灯片](https://www.liuchengxu.org/szuthesis/presentation.pdf)
 
 ![](/images/blog/2016/01-30/beamer.png)
 
-如果您已经懂得了基础操作，不妨看一下我在CSDN记录的一些LaTeX使用注意点，里面积累了我在LaTeX使用过程中的很多经验：[LaTeX实战经验：新手须知](http://blog.csdn.net/simple_the_best/article/details/51244631)
+如果您已经懂得了基础操作，不妨看一下我在CSDN记录的一些LaTeX使用注意点，里面积累了我在LaTeX使用过程中的很多经验：[LaTeX实战经验：新手须知](https://blog.csdn.net/simple_the_best/article/details/51244631)

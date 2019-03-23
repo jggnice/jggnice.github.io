@@ -234,6 +234,6 @@ s指substitute（代替，替换的意思），g指global。
 
 
 Footnotes:
-1.  [Vim学习笔记](http://mturing.com/wiki/wikihtml/Vim%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html)
+1.  [Vim学习笔记](https://mturing.com/wiki/wikihtml/Vim%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html)
 2.  学习vi与vim编辑器 第七版 中文 东南大学出版社
-3.  [一起来说vim语](http://www.codeceo.com/article/vim-language.html)
+3.  [一起来说vim语](https://www.codeceo.com/article/vim-language.html)
