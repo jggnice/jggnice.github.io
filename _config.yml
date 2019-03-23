@@ -3,10 +3,10 @@ title: Li Shiwang
 subtitle: 个人站
 userid: jggnice
 description: Just go for it! 
-creator: <a href="https://jggnice.top">@jggnice</a>
-url: "https://jggnice.top"
-production_url: "https://www.jggnice.top"
-imageurl: "https://jggnice.top/assets/images/background-cover.jpg"
+creator: <a href="https://jggnice.github.io">@jggnice</a>
+url: "https://jggnice.github.io"
+production_url: "https://www.jggnice.github.io"
+imageurl: "https://jggnice.github.io/assets/images/background-cover.jpg"
 permalink: /:year/:month/:title/
 
 # Format
@@ -24,9 +24,9 @@ blog_button:
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: TestPage, description: TestPage, url: 'https://jggnice.top/tags'}
-    - {title: cccc, description: codepage, url: 'https://jggnice.top/cccc'}
-    - {title: documents, description: su_docs, url: 'https://jggnice.top/su_docs/'}
+    - {title: TestPage, description: TestPage, url: 'https://jggnice.github.io/tags'}
+    - {title: cccc, description: codepage, url: 'https://jggnice.github.io/cccc'}
+    - {title: documents, description: su_docs, url: 'https://jggnice.github.io/su_docs/'}
     
 # Pagination
 gems: [jekyll-paginate]
